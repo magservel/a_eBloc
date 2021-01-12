@@ -1,0 +1,1573 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {},
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.974841,
+          42.494949
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "_umap_options": {
+          "color": "Red"
+        },
+        "name": "?"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.977,
+          42.495742
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "_umap_options": {
+          "color": "Blue",
+          "showLabel": false
+        },
+        "name": "?"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.973934,
+          42.495418
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "_umap_options": {
+          "color": "Blue",
+          "showLabel": false
+        },
+        "name": "?"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.975769,
+          42.49298
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "_umap_options": {
+          "color": "LimeGreen",
+          "showLabel": false
+        },
+        "name": "?"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.978212,
+          42.493013
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "_umap_options": {
+          "color": "LimeGreen",
+          "showLabel": false
+        },
+        "name": "?"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.978558,
+          42.492715
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "_umap_options": {
+          "color": "Black",
+          "showLabel": false
+        },
+        "name": "?"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.979207,
+          42.492699
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "_umap_options": {
+          "color": "Red",
+          "showLabel": false
+        },
+        "name": "?"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.977569,
+          42.492398
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "_umap_options": {
+          "iconUrl": "/uploads/pictogram/star-24.png",
+          "showLabel": null
+        },
+        "name": "?"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.970903,
+          42.494898
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "_umap_options": {
+          "color": "LimeGreen"
+        },
+        "name": "20 pour un Ange"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.97196,
+          42.493658
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "_umap_options": {
+          "color": "Gold",
+          "iconUrl": "/uploads/pictogram/star-24.png"
+        },
+        "name": "21 Grammes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.974637,
+          42.493559
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "_umap_options": {
+          "iconUrl": "/uploads/pictogram/star-24-white.png",
+          "color": "Black"
+        },
+        "name": "Absinthe"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.971783,
+          42.493341
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "_umap_options": {
+          "color": "Red"
+        },
+        "name": "Accarian Troubadour"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.972741,
+          42.49362
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "_umap_options": {
+          "color": "Blue"
+        },
+        "name": "Amidal"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.972306,
+          42.49472
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "_umap_options": {
+          "color": "LimeGreen"
+        },
+        "name": "Amidal"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.974076,
+          42.495189
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "_umap_options": {
+          "color": "Blue"
+        },
+        "name": "Androgames"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.972926,
+          42.494081
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "_umap_options": {
+          "color": "Red"
+        },
+        "name": "Autopsy"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.974151,
+          42.495319
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "_umap_options": {
+          "color": "Blue"
+        },
+        "name": "Berhault"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.977075,
+          42.4922
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "_umap_options": {
+          "color": "Black"
+        },
+        "name": "Big Mac"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.972971,
+          42.49416
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "_umap_options": {
+          "color": "Red"
+        },
+        "name": "Body in Decay"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.971727,
+          42.493652
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "_umap_options": {
+          "color": "LimeGreen"
+        },
+        "name": "Bonheur"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.977024,
+          42.492335
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "_umap_options": {
+          "color": "Black"
+        },
+        "name": "Cerdagne Air Line"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.971434,
+          42.493179
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "_umap_options": {
+          "color": "Blue"
+        },
+        "name": "Corazón Partío"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.975549,
+          42.493353
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "_umap_options": {
+          "color": "Gold",
+          "iconUrl": "/uploads/pictogram/star-24.png"
+        },
+        "name": "Créatura"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.974597,
+          42.493555
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "_umap_options": {
+          "color": "LimeGreen"
+        },
+        "name": "Dans la Matière"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.971973,
+          42.493826
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "_umap_options": {
+          "color": "LimeGreen"
+        },
+        "name": "Diplodocus"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.977507,
+          42.492357
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "_umap_options": {
+          "color": "Blue"
+        },
+        "name": "Double Jack"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.972902,
+          42.494235
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "_umap_options": {
+          "color": "Blue"
+        },
+        "name": "el Mezcladore"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.972207,
+          42.493249
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "_umap_options": {
+          "color": "Red"
+        },
+        "name": "el Poder de Greyskull"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.976008,
+          42.493078
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "_umap_options": {
+          "color": "Red"
+        },
+        "name": "Elixir"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.976745,
+          42.492315
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "_umap_options": {
+          "iconUrl": "/uploads/pictogram/star-24.png"
+        },
+        "name": "Eroto Mecanics"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.971724,
+          42.493618
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "_umap_options": {
+          "color": "Black"
+        },
+        "name": "Eternal Flame"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.975401,
+          42.494441
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "_umap_options": {
+          "color": "Blue"
+        },
+        "name": "Graal Patate"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.976761,
+          42.492313
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "_umap_options": {
+          "color": "Black"
+        },
+        "name": "Harmonium"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.976045,
+          42.494483
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "_umap_options": {
+          "color": "Black"
+        },
+        "name": "He Man"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.976037,
+          42.493086
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "_umap_options": {
+          "color": "Red"
+        },
+        "name": "Help! Jesus Revient"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.97192,
+          42.493498
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "_umap_options": {
+          "color": "LimeGreen"
+        },
+        "name": "Hey Yop"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.97358,
+          42.493968
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "_umap_options": {
+          "iconUrl": "/uploads/pictogram/star-24.png"
+        },
+        "name": "I Shot Sarkonazy"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.970552,
+          42.494352
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "_umap_options": {
+          "color": "Gold",
+          "iconUrl": "/uploads/pictogram/star-24.png"
+        },
+        "name": "In the Shadow"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.986216,
+          42.49485
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Kebab Traum",
+        "_umap_options": {
+          "color": "Black"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.971963,
+          42.493737
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "_umap_options": {
+          "color": "LimeGreen"
+        },
+        "name": "Klange"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.972462,
+          42.494053
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "_umap_options": {
+          "color": "Red"
+        },
+        "name": "l'Aliéné"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.978564,
+          42.49274
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "_umap_options": {
+          "color": "LimeGreen"
+        },
+        "name": "l'Amère Douce"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.97671,
+          42.492321
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "_umap_options": {
+          "color": "Red"
+        },
+        "name": "l'Aquarium Envolé"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.972102,
+          42.493304
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "_umap_options": {
+          "color": "MediumBlue"
+        },
+        "name": "l'Huitre"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.972961,
+          42.493555
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "_umap_options": {
+          "color": "Red"
+        },
+        "name": "la 5ª Sinfonía"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.972631,
+          42.494419
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "_umap_options": {
+          "color": "Red"
+        },
+        "name": "la Balance"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.973561,
+          42.493959
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "_umap_options": {
+          "color": "Red"
+        },
+        "name": "la Baleine"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.973864,
+          42.493996
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "_umap_options": {
+          "iconUrl": "/uploads/pictogram/star-24.png"
+        },
+        "name": "la Fée Verte"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.971821,
+          42.493363
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "_umap_options": {
+          "color": "LimeGreen"
+        },
+        "name": "la Mouche"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.977126,
+          42.492339
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "_umap_options": {
+          "color": "Red"
+        },
+        "name": "la Voie du Samuraï"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.975356,
+          42.493294
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "_umap_options": {
+          "color": "Blue"
+        },
+        "name": "le Baron du Milieu"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.970522,
+          42.494805
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "_umap_options": {
+          "color": "Black"
+        },
+        "name": "le Feu Oculte"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.976984,
+          42.496834
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "_umap_options": {
+          "color": "Gold",
+          "iconUrl": "/uploads/pictogram/star-24.png"
+        },
+        "name": "le Pardon"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.972904,
+          42.493666
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "_umap_options": {
+          "color": "Black",
+          "iconUrl": "/uploads/pictogram/star-24-white.png"
+        },
+        "name": "le Seigneur des Anales"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.971705,
+          42.493662
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "_umap_options": {
+          "iconUrl": "/uploads/pictogram/star-24-white.png",
+          "color": "Black"
+        },
+        "name": "le Tombeau de Damme Panc Ashash"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.971456,
+          42.493606
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "_umap_options": {
+          "iconUrl": "/uploads/pictogram/star-24.png"
+        },
+        "name": "le Trou du Culte"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.976965,
+          42.495772
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "_umap_options": {
+          "color": "Red"
+        },
+        "name": "Legitime Défonce"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.977746,
+          42.492349
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "_umap_options": {
+          "color": "LimeGreen"
+        },
+        "name": "les Saisons du Doute"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.972955,
+          42.494249
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "_umap_options": {
+          "color": "LimeGreen"
+        },
+        "name": "Let's Crack"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.973894,
+          42.495224
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "_umap_options": {
+          "color": "Black"
+        },
+        "name": "Little Death"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.973001,
+          42.494237
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Loby One",
+        "_umap_options": {
+          "color": "Red"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.972309,
+          42.494152
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "_umap_options": {
+          "color": "Red"
+        },
+        "name": "Love is in the Air"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.986157,
+          42.494835
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "_umap_options": {
+          "color": "Blue"
+        },
+        "name": "Love with a Dog"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.972939,
+          42.494231
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "_umap_options": {
+          "color": "Blue"
+        },
+        "name": "Lumière et Melancolie"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.971461,
+          42.493658
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "_umap_options": {
+          "color": "Gold",
+          "iconUrl": "/uploads/pictogram/star-24.png"
+        },
+        "name": "Magic Instinct"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.973899,
+          42.493984
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "_umap_options": {
+          "color": "Red"
+        },
+        "name": "Magie d'Oz"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.97361,
+          42.495422
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "_umap_options": {
+          "color": "Gold",
+          "iconUrl": "/uploads/pictogram/star-24.png"
+        },
+        "name": "MoonBoard"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.97594,
+          42.494166
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "_umap_options": {
+          "color": "Black",
+          "iconUrl": "/uploads/pictogram/star-24-white.png"
+        },
+        "name": "Nazgul"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.971662,
+          42.493656
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "_umap_options": {
+          "color": "Blue"
+        },
+        "name": "On s'y Croirait"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.973934,
+          42.495206
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "_umap_options": {
+          "color": "Red"
+        },
+        "name": "Ouverture sur le Monde"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.976262,
+          42.496446
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "_umap_options": {
+          "color": "Black"
+        },
+        "name": "Pac-Man"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.976077,
+          42.494489
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "_umap_options": {
+          "color": "Red"
+        },
+        "name": "Pédallo"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.975798,
+          42.494601
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "_umap_options": {
+          "iconUrl": "/uploads/pictogram/star-24.png"
+        },
+        "name": "Phantom Lord"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.976799,
+          42.494872
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "_umap_options": {
+          "color": "Red"
+        },
+        "name": "Pince Mince"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.97332,
+          42.494046
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "_umap_options": {
+          "color": "Red"
+        },
+        "name": "Placebo"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.977016,
+          42.496844
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "_umap_options": {
+          "color": "Blue"
+        },
+        "name": "Plat Team"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.977027,
+          42.492525
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "_umap_options": {
+          "color": "Red"
+        },
+        "name": "Pleasure Dome"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.973017,
+          42.494065
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "_umap_options": {
+          "iconUrl": "/uploads/pictogram/star-24.png"
+        },
+        "name": "Psoas Mole"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.970243,
+          42.494817
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "_umap_options": {
+          "iconUrl": "/uploads/pictogram/star-24.png"
+        },
+        "name": "Queen of Heart"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.971641,
+          42.493646
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Rébellion",
+        "_umap_options": {
+          "color": "Red"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.972454,
+          42.494049
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "_umap_options": {
+          "color": "Black"
+        },
+        "name": "Renaiss"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.974766,
+          42.493326
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "_umap_options": {
+          "color": "Blue"
+        },
+        "name": "Rien de Plus"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.976995,
+          42.492333
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "_umap_options": {
+          "color": "MediumBlue"
+        },
+        "name": "Scato no Vice"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.976319,
+          42.496061
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "_umap_options": {
+          "color": "Gold",
+          "iconUrl": "/uploads/pictogram/star-24.png"
+        },
+        "name": "Sing While You May"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.972615,
+          42.493399
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "description": "1\tEmbrasse le!\n2\t?\n3\t?\n4\tStar Trip\n5\t?\n6\t?\n7\t?\n8\t?\n9\t?",
+        "name": "Star Trip",
+        "_umap_options": {
+          "color": "Red"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.978628,
+          42.492683
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "_umap_options": {
+          "iconUrl": "/uploads/pictogram/star-24.png"
+        },
+        "name": "Superman"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.973333,
+          42.495143
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "_umap_options": {
+          "color": "Gold",
+          "iconUrl": "/uploads/pictogram/star-24.png"
+        },
+        "name": "Théorie du Chaos"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.973317,
+          42.494077
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "_umap_options": {
+          "color": "Red"
+        },
+        "name": "Ticket Tacc"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.973159,
+          42.493608
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "_umap_options": {
+          "color": "Black"
+        },
+        "name": "Traité de Démonologie"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.970498,
+          42.494779
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "_umap_options": {
+          "iconUrl": "/uploads/pictogram/star-24.png"
+        },
+        "name": "Uniformicide"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.97052,
+          42.494783
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "_umap_options": {
+          "color": "LimeGreen"
+        },
+        "name": "Verre Brisé"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.972778,
+          42.494251
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Vicious Game",
+        "_umap_options": {
+          "iconUrl": "/uploads/pictogram/star-24-white.png",
+          "color": "Black"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.976278,
+          42.496035
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "_umap_options": {
+          "color": "Blue"
+        },
+        "name": "Video Maniac"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.972735,
+          42.493961
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "_umap_options": {
+          "color": "Black"
+        },
+        "name": "Vive la Morraine"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.970268,
+          42.495212
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "_umap_options": {
+          "color": "LimeGreen"
+        },
+        "name": "Volutes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.977027,
+          42.492558
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "_umap_options": {
+          "iconUrl": "/uploads/pictogram/star-24.png"
+        },
+        "name": "Zdabauw"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.971595,
+          42.493233
+        ]
+      }
+    }
+  ]
+}

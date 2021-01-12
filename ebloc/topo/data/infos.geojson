@@ -1,0 +1,194 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Parking Y"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.991752,
+          42.495264
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Parking Thémis"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.977271,
+          42.493193
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Parking Table"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.975506,
+          42.495523
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Parking Proue"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.985194,
+          42.494368
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Parking Principal"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.973304,
+          42.492537
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Parking Extra"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.973049,
+          42.490982
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Parking Créatura"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.974235,
+          42.492653
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Parking Chapeau"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.985272,
+          42.495622
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "_umap_options": {
+          "color": "Purple"
+        },
+        "name": "Parking Camping Car"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.981587,
+          42.500475
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Parking Cacao"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.992637,
+          42.494635
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Parking Arche"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.977507,
+          42.494061
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Parking Aigle"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.976324,
+          42.495369
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Parking 3 Grasses"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.976673,
+          42.492898
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "_umap_options": {
+          "iconUrl": "",
+          "color": "DarkGreen"
+        },
+        "name": "La Griole"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.986181,
+          42.49592
+        ]
+      }
+    }
+  ]
+}

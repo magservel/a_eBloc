@@ -1,0 +1,44 @@
+
+{% extends 'base.html' %}
+
+{% block content %}
+
+<div id="sidebar" class="sidebar collapsed">
+        <!-- Nav tabs -->
+        <div class="sidebar-tabs">
+            <ul role="tablist">
+                <li><a href="#home" role="tab"><i class="fa fa-bars"></i></a></li>
+                <li><a href="#info" role="tab"><i class="fa fa-info"></i></a></li>
+
+                <li><a href="#filter" role="tab"><i class="fa fa-filter"></i></a></li>
+                <li><a href="#search" role="tab"><i class="fa fa-search"></i></a></li>
+
+<!--                <li class="disabled"><a href="#profile" role="tab"><i class="fa fa-profile"></i></a></li>-->
+            </ul>
+
+<!--            <ul role="tablist">-->
+<!--                <li><a href="#settings" role="tab"><i class="fa fa-gear"></i></a></li>-->
+<!--            </ul>-->
+        </div>
+
+        <!-- Tab panes -->
+        <div class="sidebar-content">
+            <div class="sidebar-pane" id="home">
+                <h1 class="sidebar-header"> eBloc Targa <span class="sidebar-close"><i class="fa fa-caret-left"></i></span></h1>
+                     {% include 'list.html' %}
+            </div>
+
+            {% include 'infos.html' %}
+
+            <div class="sidebar-pane" id="filter">
+                <h1 class="sidebar-header">Filtrer<span class="sidebar-close"><i class="fa fa-caret-left"></i></span></h1>
+                <p>Ici un filtre</p>
+            </div>
+
+            <div class="sidebar-pane" id="search">
+                <h1 class="sidebar-header">Rechercher<span class="sidebar-close"><i class="fa fa-caret-left"></i></span></h1>
+            </div>
+
+        </div>
+    </div>
+{% endblock content %}
