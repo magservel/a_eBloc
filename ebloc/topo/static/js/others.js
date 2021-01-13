@@ -38,9 +38,9 @@ let infoLayerOptions = {
   onEachFeature: onEachInfo,
 }
 
-$.get(others_url,
-    function(data) {
-        const geoJson = JSON.parse(data);
-        others = L.geoJson(geoJson.features, infoLayerOptions).addTo(map);
-    });
+//$.get(others_url,
+//    function(data) {
+//        const geoJson = JSON.parse(data);
+//        others = L.geoJson(geoJson.features, infoLayerOptions).addTo(map);
+//    });
 

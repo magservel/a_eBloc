@@ -20,9 +20,14 @@ home = Home.as_view()
 
 
 def index(request):
-    lines = Line.objects.all()
+    lines = Line.objects.values()
+    others = Other.objects.values()
+    sectors = Line.objects.values()
+
     context = {'lines': lines,
-               'line': lines[0]}
+               'others': others,
+               'sectors': sectors,
+               }
     template = loader.get_template('index.html')
     return HttpResponse(template.render(context, request=request))
 

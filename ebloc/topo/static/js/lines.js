@@ -47,9 +47,9 @@ let lineLayerOptions = {
   onEachFeature: onEachLine,
 }
 
-$.get(lines_url,
-    function(data) {
-        const geoJson = JSON.parse(data);
-        lines = L.geoJson(geoJson.features, lineLayerOptions).addTo(map);
-    });
+//$.get(lines_url,
+//    function(data) {
+//        const geoJson = JSON.parse(data);
+//        lines = L.geoJson(geoJson.features, lineLayerOptions).addTo(map);
+//    });
 
