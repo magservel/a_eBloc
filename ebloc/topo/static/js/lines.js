@@ -1,26 +1,17 @@
+function printInfo(e) {
+    sidebar = L.DomUtil.get('sidebar');
+    sidebar.classList.toggle('collapsed', false);
+    tab_info = L.DomUtil.get('tab_info');
+    tab_info.classList.toggle('active', true);
+    info = L.DomUtil.get('info');
+    info.classList.toggle('active', true);
+    info.innerHTML = e.target.feature.properties.printInfo;
+}
+
 function onEachLine(feature, layer) {
     layer.on({
-        mouseover: openPopup,
-        mouseout: resetHighlight,
+        click: printInfo,
     });
-        switch (feature.properties.calque) {
-          case 1:
-                f_layer.addLayer( layer );
-            break;
-            case 2:
-                ad_layer.addLayer( layer );
-            break;
-            case 3:
-                d_layer.addLayer( layer );
-            break;
-            case 4:
-                td_layer.addLayer( layer );
-            break;
-            case 5:
-                ed_layer.addLayer( layer );
-            break;
-
-        }
 }
 
 function createCustomIcon (feature, latlng) {

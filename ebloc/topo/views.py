@@ -20,10 +20,11 @@ home = Home.as_view()
 
 
 def index(request):
-    lines = Line.objects.values()
+    lines = Line.objects.all()
     others = Other.objects.values()
-    sectors = Line.objects.values()
+    sectors = Sector.objects.values()
 
+    print(lines[0].printInfo)
     context = {'lines': lines,
                'others': others,
                'sectors': sectors,

@@ -1,8 +1,8 @@
 function onEachInfo(feature, layer) {
-    layer.on({
-        mouseover: openPopup,
-        mouseout: resetHighlight,
-    });
+//    layer.on({
+//        mouseover: openPopup,
+//        mouseout: resetHighlight,
+//    });
     others_layer.addLayer( layer );
 }
 
@@ -35,12 +35,7 @@ function createCustomIcon (feature, latlng) {
 // create an options object that specifies which function will called on each feature
 let infoLayerOptions = {
   pointToLayer: createCustomIcon,
-  onEachFeature: onEachInfo,
+//  onEachFeature: onEachInfo,
 }
 
-//$.get(others_url,
-//    function(data) {
-//        const geoJson = JSON.parse(data);
-//        others = L.geoJson(geoJson.features, infoLayerOptions).addTo(map);
-//    });
 

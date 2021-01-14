@@ -110,6 +110,10 @@ class Line(models.Model):
     ouvert = models.CharField(max_length=50, blank=True)
     first_ascent = models.CharField(max_length=50, blank=True)
 
+    @property
+    def printInfo(self):
+        return '<h1>{}</h1><p>{}</p>'.format(
+            self.name, self.cota)
 
 class Photo(models.Model):
     target_choices = [
