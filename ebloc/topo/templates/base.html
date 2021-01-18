@@ -43,17 +43,12 @@
             var locate = L.control.locate().addTo(map);
             var sidebar = L.control.sidebar('sidebar').addTo(map);
 
-            var lines = {{ lines|geojsonfeature:"printInfo"|safe }}
-            var others = {{ others|geojsonfeature:"type"|safe }}
-            var sectors = {{ sectors|geojsonfeature:"color"|safe }}
 
-            var lines_geom = L.geoJson(lines.features, lineLayerOptions).addTo(map);
-            var others_geom = L.geoJson(others.features, infoLayerOptions).addTo(map);
-            var sectors_geom = L.geoJson(sectors.features, {
-                style: function (feature) {
-                    return {color: feature.properties.color};
-                },
-            }).addTo(map);
+
+            $.getJSON("{% url 'lines' %}", function (data) {
+                var lines_geom = L.geoJson(data.features, lineLayerOptions).addTo(map);
+            });
+
 
         </script>
     </body>

@@ -16,7 +16,9 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from djgeojson.views import GeoJSONLayerView
+from djgeojson.views import TiledGeoJSONLayerView
 from topo import views
+from topo.models import Line
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -25,5 +27,5 @@ urlpatterns = [
     path('get/others', views.get_all_others, name='get_all_others'),
     path('get/lines', views.get_all_lines, name='get_all_lines'),
     path('get/line', views.get_line, name='get_line'),
-
+    path(r'^data.geojson$', GeoJSONLayerView.as_view(model=Line, properties=['name', 'calque', 'cota', 'printInfo']), name='lines', ),
 ]

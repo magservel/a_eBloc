@@ -3,6 +3,7 @@ from django.views import generic
 from djgeojson.serializers import Serializer as GeoJSONSerializer
 from django.core.serializers import serialize
 from django.template import loader
+import json
 
 from django.http import HttpResponse, HttpResponseBadRequest
 
@@ -20,14 +21,17 @@ home = Home.as_view()
 
 
 def index(request):
-    lines = Line.objects.all()
-    others = Other.objects.values()
-    sectors = Sector.objects.values()
+    # lines = serialize('geojson', Line.objects.all())
+    lines = Line.objects.values_list('name', 'cota')
+    # others = serialize('geojson', Other.objects.all())
+    # sectors = serialize('geojson', Sector.objects.all())
 
-    print(lines[0].printInfo)
+    # others = Other.objects.values()
+    # sectors = Sector.objects.values()
+
     context = {'lines': lines,
-               'others': others,
-               'sectors': sectors,
+               # 'others': others,
+               # 'sectors': sectors,
                }
     template = loader.get_template('index.html')
     return HttpResponse(template.render(context, request=request))

@@ -28,3 +28,8 @@ class BlocAdmin(OSMGeoAdmin):
 @admin.register(Line)
 class LineAdmin(OSMGeoAdmin):
     list_display = ['name']
+
+
+@admin.register(Photo)
+class PhotoAdmin(OSMGeoAdmin):
+    list_display = ['photo', 'note']

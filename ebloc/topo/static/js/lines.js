@@ -5,6 +5,7 @@ function printInfo(e) {
     tab_info.classList.toggle('active', true);
     info = L.DomUtil.get('info');
     info.classList.toggle('active', true);
+    console.log(e.target.feature.properties.printInfo);
     info.innerHTML = e.target.feature.properties.printInfo;
 }
 
@@ -14,8 +15,13 @@ function onEachLine(feature, layer) {
     });
 }
 
-function createCustomIcon (feature, latlng) {
+function getCalque(cota){
+    return 0;
+}
 
+function createCustomIcon (feature, latlng) {
+console.log(feature);
+    //var calque = getCalque(feature.properties.calque);
     var colors = ['white', 'green', 'blue', 'red', 'black', 'gold']
     var iconColor = colors[feature.properties.calque];
 

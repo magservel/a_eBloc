@@ -112,23 +112,29 @@ class Line(models.Model):
 
     @property
     def printInfo(self):
-        return '<h1>{}</h1><p>{}</p>'.format(
-            self.name, self.cota)
+        html = self.name
+        return print_info_gen(html)
+
+
+def print_info_gen(html):
+    res = """
+                <h1 class="sidebar-header"> Infos <span class="sidebar-close"><i class="fa fa-caret-left"></i></span></h1>
+                <p> """ + html + """
+                </p>
+    """
+    return res
+
 
 class Photo(models.Model):
     target_choices = [
         (0, 'Bloc'),
         (1, 'Ligne'),
-        (2, 'Les deux'),
+        (2, 'Artistique'),
     ]
     target_type = models.IntegerField(choices=target_choices, default=0)
-    target_bloc = models.ForeignKey(Bloc, on_delete=models.CASCADE)
-    target_line = models.ForeignKey(Line, on_delete=models.CASCADE)
+    target_bloc = models.ForeignKey(Bloc, on_delete=models.CASCADE, null=True)
+    target_line = models.ForeignKey(Line, on_delete=models.CASCADE, null=True)
     photo = models.ImageField(upload_to='photo/.')
     orientation = models.CharField(max_length=2, choices=orientation_choices)
     number = models.IntegerField(default=0)
-
-
-
-
-
+    note = models.IntegerField(default=0)
