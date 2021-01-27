@@ -1,9 +1,7 @@
 function onEachInfo(feature, layer) {
-//    layer.on({
-//        mouseover: openPopup,
-//        mouseout: resetHighlight,
-//    });
-    others_layer.addLayer( layer );
+    layer.on({
+        //click: printInfo,
+    });
 }
 
 parkingIconOptions = {
@@ -28,14 +26,12 @@ function createCustomIcon (feature, latlng) {
     } else {
         infoIcon = L.BeautifyIcon.icon(campingIconOptions)
     }
-
   return L.marker(latlng, { icon: infoIcon })
 }
 
-// create an options object that specifies which function will called on each feature
-let infoLayerOptions = {
+let otherLayerOptions = {
   pointToLayer: createCustomIcon,
-//  onEachFeature: onEachInfo,
+  onEachFeature: onEachInfo,
 }
 
 

@@ -18,14 +18,12 @@ from django.urls import path
 from djgeojson.views import GeoJSONLayerView
 from djgeojson.views import TiledGeoJSONLayerView
 from topo import views
-from topo.models import Line
+from topo.models import Line, Sector, Other
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path("", views.index),
-    path('get/sectors', views.get_all_sectors, name='get_all_sectors'),
-    path('get/others', views.get_all_others, name='get_all_others'),
-    path('get/lines', views.get_all_lines, name='get_all_lines'),
-    path('get/line', views.get_line, name='get_line'),
-    path(r'^data.geojson$', GeoJSONLayerView.as_view(model=Line, properties=['name', 'calque', 'cota', 'printInfo']), name='lines', ),
+
+    path('line/<int:pk>', views.LineDetailView.as_view(), name='line'),
+
 ]

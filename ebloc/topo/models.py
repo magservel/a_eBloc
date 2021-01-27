@@ -29,6 +29,10 @@ class Other(models.Model):
     type = models.IntegerField(choices=other_type_choices)
     geom = models.PointField()
     objects = GeoManager()
+    @property
+    def printInfo(self):
+        html = self.name
+        return print_info_gen(html)
 
 
 class Sentier(models.Model):
@@ -43,6 +47,10 @@ class Sector(models.Model):
     geom = models.PolygonField(srid=4326)
     forgiven = models.BooleanField(default=False)
     objects = GeoManager()
+    @property
+    def printInfo(self):
+        html = self.name
+        return print_info_gen(html)
 
 
 class Bloc(models.Model):
@@ -51,33 +59,15 @@ class Bloc(models.Model):
     geom = models.PointField(null=True)
     objects = GeoManager()
 
-
-class Line(models.Model):
-
-    calques_choices = [
-        (0, 'UNKNOWN'),
-        (1, 'FACILE'),
-        (2, 'DIFFICILE'),
-        (3, 'ASSEZ_DIFFICILE'),
-        (4, 'TRES_DIFFICILE'),
-        (5, 'EXTREMEMENT_DIFFICILE'),
-    ]
-
+class LineInfo(models.Model):
     incontournable_choices = [
         (0, 'Aucun'),
         (1, 'Secteur'),
         (2, 'Site'),
     ]
 
-    geom = models.PointField(null=True)
-    objects = GeoManager()
-    name = models.CharField(max_length=100, blank=True)
-    bloc = models.ForeignKey(Bloc, on_delete=models.CASCADE, null=True)
     incontournable = models.IntegerField(choices=incontournable_choices, default=0)
     code_topo = models.CharField(max_length=10, blank=True)
-    line_nb = models.IntegerField(default=0)
-    cota = models.CharField(max_length=10, blank=True)
-    calque = models.IntegerField(choices=calques_choices, default=0)
     da = models.BooleanField(default=False)
     da_cota = models.CharField(max_length=10, blank=True)
     hauteur = models.FloatField(default=0)
@@ -109,6 +99,27 @@ class Line(models.Model):
     annee = models.CharField(max_length=5, blank=True)
     ouvert = models.CharField(max_length=50, blank=True)
     first_ascent = models.CharField(max_length=50, blank=True)
+
+
+class Line(models.Model):
+
+    calques_choices = [
+        (0, 'UNKNOWN'),
+        (1, 'FACILE'),
+        (2, 'DIFFICILE'),
+        (3, 'ASSEZ_DIFFICILE'),
+        (4, 'TRES_DIFFICILE'),
+        (5, 'EXTREMEMENT_DIFFICILE'),
+    ]
+    line_info = models.ForeignKey(LineInfo, on_delete=models.CASCADE, null=True)
+    line_nb = models.IntegerField(default=0)
+    cota = models.CharField(max_length=10, blank=True)
+    calque = models.IntegerField(choices=calques_choices, default=0)
+    geom = models.PointField(null=True)
+    objects = GeoManager()
+    name = models.CharField(max_length=100, blank=True)
+    bloc = models.ForeignKey(Bloc, on_delete=models.CASCADE, null=True)
+
 
     @property
     def printInfo(self):

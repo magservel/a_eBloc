@@ -1,7 +1,4 @@
 
-{% extends 'base.html' %}
-
-{% block content %}
 
 <div id="sidebar" class="sidebar collapsed">
         <!-- Nav tabs -->
@@ -25,10 +22,15 @@
         <div class="sidebar-content">
             <div class="sidebar-pane" id="home">
                 <h1 class="sidebar-header"> eBloc Targa <span class="sidebar-close"><i class="fa fa-caret-left"></i></span></h1>
-                     {% include 'list.html' %}
             </div>
 
-            {% include 'infos.html' %}
+            <div class="sidebar-pane" id="info">
+                <h1 class="sidebar-header"> Info <span class="sidebar-close"><i class="fa fa-caret-left"></i></span></h1>
+                <div id="line_info">
+
+                </div>
+            </div>
+
 
             <div class="sidebar-pane" id="filter">
                 <h1 class="sidebar-header">Filtrer<span class="sidebar-close"><i class="fa fa-caret-left"></i></span></h1>
@@ -40,5 +42,5 @@
             </div>
 
         </div>
-    </div>
-{% endblock content %}
+    </div><div id="map" class="sidebar-map"></div>
+

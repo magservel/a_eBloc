@@ -1,71 +1,30 @@
-from django.shortcuts import render
-from django.views import generic
-from djgeojson.serializers import Serializer as GeoJSONSerializer
-from django.core.serializers import serialize
 from django.template import loader
-import json
+from django.views import generic
+from django.shortcuts import get_object_or_404, render
+from django.core.serializers import serialize
 
-from django.http import HttpResponse, HttpResponseBadRequest
 
+from django.http import HttpResponse
 from .models import Sector, Other, Line
 
 
-class Home(generic.ListView):
-    model = Sector
-    context_object_name = 'sectors'
-    queryset = Sector.objects.all()
-    template_name = 'index.html'
-
-
-home = Home.as_view()
-
-
 def index(request):
-    # lines = serialize('geojson', Line.objects.all())
-    lines = Line.objects.values_list('name', 'cota')
-    # others = serialize('geojson', Other.objects.all())
     # sectors = serialize('geojson', Sector.objects.all())
-
-    # others = Other.objects.values()
-    # sectors = Sector.objects.values()
-
-    context = {'lines': lines,
-               # 'others': others,
-               # 'sectors': sectors,
-               }
+    # lines = serialize('geojson', Line.objects.all())
+    # others = serialize('geojson', Other.objects.all())
+    context = {
+        'sectors': serialize('geojson', Sector.objects.all()),
+        'lines': serialize('geojson', Line.objects.all()),
+        'others': serialize('geojson', Other.objects.all()),
+    }
     template = loader.get_template('index.html')
     return HttpResponse(template.render(context, request=request))
 
 
-def get_all_sectors(request):
-    if request.is_ajax():
-        geojson_data = serialize('geojson', Sector.objects.all())
-        return HttpResponse(geojson_data)
-    msg = "Bad request: not AJAX"
-    return HttpResponseBadRequest(msg)
+class LineDetailView(generic.DetailView):
+    model = Line
 
-
-def get_all_others(request):
-    if request.is_ajax():
-        geojson_data = serialize('geojson', Other.objects.all())
-        return HttpResponse(geojson_data)
-    msg = "Bad request: not AJAX"
-    return HttpResponseBadRequest(msg)
-
-
-def get_all_lines(request):
-    if request.is_ajax():
-        geojson_data = serialize('geojson', Line.objects.all())
-        return HttpResponse(geojson_data)
-    msg = "Bad request: not AJAX"
-    return HttpResponseBadRequest(msg)
-
-
-# TODO: finish this function
-def get_line():
-    pass
-#     line = Line.objects.values().get(pk=1)
-#     context = {'line': line}
-#     template = loader.get_template('infos.html')
-#     return HttpResponse(template.render(context))
-
+    def line_detail_view(request, primary_key):
+        print(primary_key)
+        line = get_object_or_404(Line, pk=primary_key)
+        return render(request, 'line_detail.html', context={'line': line})
