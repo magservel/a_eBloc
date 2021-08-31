@@ -29,10 +29,6 @@ class Other(models.Model):
     type = models.IntegerField(choices=other_type_choices)
     geom = models.PointField()
     objects = GeoManager()
-    @property
-    def printInfo(self):
-        html = self.name
-        return print_info_gen(html)
 
 
 class Sentier(models.Model):
@@ -47,10 +43,6 @@ class Sector(models.Model):
     geom = models.PolygonField(srid=4326)
     forgiven = models.BooleanField(default=False)
     objects = GeoManager()
-    @property
-    def printInfo(self):
-        html = self.name
-        return print_info_gen(html)
 
 
 class Bloc(models.Model):
@@ -58,6 +50,7 @@ class Bloc(models.Model):
     sector = models.ForeignKey(Sector, on_delete=models.SET(0))
     geom = models.PointField(null=True)
     objects = GeoManager()
+
 
 class LineInfo(models.Model):
     incontournable_choices = [
@@ -101,6 +94,20 @@ class LineInfo(models.Model):
     first_ascent = models.CharField(max_length=50, blank=True)
 
 
+class Photo(models.Model):
+    target_choices = [
+        (0, 'Bloc'),
+        (1, 'Ligne'),
+        (2, 'Artistique'),
+    ]
+    name = models.CharField(max_length=50, blank=True)
+    target_type = models.IntegerField(choices=target_choices, default=1)
+    photo = models.ImageField(upload_to='photos/')
+    # orientation = models.CharField(max_length=2, choices=orientation_choices)
+    # number = models.IntegerField(default=0)
+    # note = models.IntegerField(default=0)
+
+
 class Line(models.Model):
 
     calques_choices = [
@@ -119,33 +126,7 @@ class Line(models.Model):
     objects = GeoManager()
     name = models.CharField(max_length=100, blank=True)
     bloc = models.ForeignKey(Bloc, on_delete=models.CASCADE, null=True)
+    photos = models.ManyToManyField(Photo)
 
 
-    @property
-    def printInfo(self):
-        html = self.name
-        return print_info_gen(html)
 
-
-def print_info_gen(html):
-    res = """
-                <h1 class="sidebar-header"> Infos <span class="sidebar-close"><i class="fa fa-caret-left"></i></span></h1>
-                <p> """ + html + """
-                </p>
-    """
-    return res
-
-
-class Photo(models.Model):
-    target_choices = [
-        (0, 'Bloc'),
-        (1, 'Ligne'),
-        (2, 'Artistique'),
-    ]
-    target_type = models.IntegerField(choices=target_choices, default=0)
-    target_bloc = models.ForeignKey(Bloc, on_delete=models.CASCADE, null=True)
-    target_line = models.ForeignKey(Line, on_delete=models.CASCADE, null=True)
-    photo = models.ImageField(upload_to='photo/.')
-    orientation = models.CharField(max_length=2, choices=orientation_choices)
-    number = models.IntegerField(default=0)
-    note = models.IntegerField(default=0)

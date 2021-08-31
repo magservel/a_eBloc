@@ -32,4 +32,4 @@ class LineAdmin(OSMGeoAdmin):
 
 @admin.register(Photo)
 class PhotoAdmin(OSMGeoAdmin):
-    list_display = ['photo', 'note']
+    list_display = ['photo']
