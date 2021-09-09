@@ -15,8 +15,6 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from djgeojson.views import GeoJSONLayerView
-from djgeojson.views import TiledGeoJSONLayerView
 from topo import views
 from topo.models import Line, Sector, Other
 
@@ -24,6 +22,5 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path("", views.index),
 
-    path('line/<int:pk>', views.LineDetailView.as_view(), name='line'),
 
 ]

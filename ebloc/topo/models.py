@@ -5,6 +5,7 @@ from django.db import models
 from django.contrib.gis.db import models
 from django.db.models import Manager as GeoManager
 from django.core.validators import MinValueValidator, MaxValueValidator
+from colorfield.fields import ColorField
 
 orientation_choices = [
     ('n', 'Nord'),
@@ -52,13 +53,44 @@ class Bloc(models.Model):
     objects = GeoManager()
 
 
-class LineInfo(models.Model):
+class Photo(models.Model):
+    target_choices = [
+        (0, 'Bloc'),
+        (1, 'Ligne'),
+        (2, 'Artistique'),
+    ]
+    name = models.CharField(max_length=50, blank=True)
+    target_type = models.IntegerField(choices=target_choices, default=1)
+    photo = models.ImageField(upload_to='photos/')
+    orientation = models.CharField(max_length=2, choices=orientation_choices, blank=True)
+    number = models.IntegerField(default=0)
+    note = models.IntegerField(default=0)
+
+
+class Line(models.Model):
+
+    calques_choices = [
+        (0, 'UNKNOWN'),
+        (1, 'FACILE'),
+        (2, 'DIFFICILE'),
+        (3, 'ASSEZ_DIFFICILE'),
+        (4, 'TRES_DIFFICILE'),
+        (5, 'EXTREMEMENT_DIFFICILE'),
+    ]
     incontournable_choices = [
         (0, 'Aucun'),
         (1, 'Secteur'),
         (2, 'Site'),
     ]
-
+    line_nb = models.IntegerField(default=0)
+    cota = models.CharField(max_length=10, blank=True)
+    calque = models.IntegerField(choices=calques_choices, default=0)
+    geom = models.PointField(null=True)
+    objects = GeoManager()
+    name = models.CharField(max_length=100, blank=True)
+    bloc = models.ForeignKey(Bloc, on_delete=models.CASCADE, null=True)
+    color = ColorField(default='#FF0000')
+    photos = models.ManyToManyField(Photo)
     incontournable = models.IntegerField(choices=incontournable_choices, default=0)
     code_topo = models.CharField(max_length=10, blank=True)
     da = models.BooleanField(default=False)
@@ -92,41 +124,3 @@ class LineInfo(models.Model):
     annee = models.CharField(max_length=5, blank=True)
     ouvert = models.CharField(max_length=50, blank=True)
     first_ascent = models.CharField(max_length=50, blank=True)
-
-
-class Photo(models.Model):
-    target_choices = [
-        (0, 'Bloc'),
-        (1, 'Ligne'),
-        (2, 'Artistique'),
-    ]
-    name = models.CharField(max_length=50, blank=True)
-    target_type = models.IntegerField(choices=target_choices, default=1)
-    photo = models.ImageField(upload_to='photos/')
-    # orientation = models.CharField(max_length=2, choices=orientation_choices)
-    # number = models.IntegerField(default=0)
-    # note = models.IntegerField(default=0)
-
-
-class Line(models.Model):
-
-    calques_choices = [
-        (0, 'UNKNOWN'),
-        (1, 'FACILE'),
-        (2, 'DIFFICILE'),
-        (3, 'ASSEZ_DIFFICILE'),
-        (4, 'TRES_DIFFICILE'),
-        (5, 'EXTREMEMENT_DIFFICILE'),
-    ]
-    line_info = models.ForeignKey(LineInfo, on_delete=models.CASCADE, null=True)
-    line_nb = models.IntegerField(default=0)
-    cota = models.CharField(max_length=10, blank=True)
-    calque = models.IntegerField(choices=calques_choices, default=0)
-    geom = models.PointField(null=True)
-    objects = GeoManager()
-    name = models.CharField(max_length=100, blank=True)
-    bloc = models.ForeignKey(Bloc, on_delete=models.CASCADE, null=True)
-    photos = models.ManyToManyField(Photo)
-
-
-

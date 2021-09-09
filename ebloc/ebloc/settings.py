@@ -40,21 +40,6 @@ LEAFLET_CONFIG = {
     'MINIMAP': False,
     'RESET_VIEW': False,
     'PLUGINS': {
-        'beautify-marker': {
-            'css': 'css/leaflet-beautify-marker-icon.css',
-            'js': 'js/leaflet-beautify-marker-icon.js',
-            'auto-include': False,
-        },
-        'locate': {
-            'css': 'css/L.Control.Locate.min.css',
-            'js': 'js/L.Control.Locate.min.js',
-            'auto-include': False,
-        },
-        'sidebar': {
-            'css': 'css/leaflet-sidebar.css',
-            'js': 'js/leaflet-sidebar.js',
-            'auto-include': False,
-        },
     }
 }
 
@@ -68,9 +53,6 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'django.contrib.gis',
     'topo',
-    'fontawesome-free',
-    'leaflet',
-    'djgeojson',
 ]
 
 MIDDLEWARE = [

@@ -12,9 +12,9 @@ def index(request):
     # lines = serialize('geojson', Line.objects.all())
     # others = serialize('geojson', Other.objects.all())
     context = {
-        'sectors': serialize('geojson', Sector.objects.all()),
-        'lines': serialize('geojson', Line.objects.all()),
-        'others': serialize('geojson', Other.objects.all()),
+        # 'sectors': serialize('geojson', Sector.objects.all()),
+        # 'lines': serialize('geojson', Line.objects.all()),
+        # 'others': serialize('geojson', Other.objects.all()),
     }
     template = loader.get_template('base.html')
     return HttpResponse(template.render(context, request=request))
